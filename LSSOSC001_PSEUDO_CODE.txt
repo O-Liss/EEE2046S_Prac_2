@@ -1,0 +1,27 @@
+LSSOSC001
+Pseudo Code
+
+1. Start main
+2. Initialize decimal and radix as integers
+3. Print intro title card
+4. While the decimal >= 0: do line 5 - 23
+	5. Scan in decimal and radix from the user
+	6. If decimal<0: do line 7
+		7. Print EXIT and then move to line 23
+	8. Else: do line 9 - 22
+        9. Calculate, initialize and print log base 2 of decimal number 
+        10. Calculate, initialize and print the integer result of decimal divided by radix
+        11. Calculate, initialize and print the remainder 
+        12. Call Dec2RadI: do line 13 - 22
+		    13. Calculate and initialize logVal. The log of the decimal with radix as the base
+		    14. Calculate and initialize logVal_floor. The floor of the logVal
+		    15. For i starting at 0 until i<= logVal_floor: do line 16 - 22 
+		    	16. Calculate and initialize unit. The radix to the power of (logVal_floor – i)
+		    	17. Calculate and initialize num_unit. The floor of the decimal divided by unit
+		    	18. If num_unit is greater than 9: do line 19
+		    		19. Print the relative ASCII char associated (A,B,C,D,E,F)
+		    	20. Else: do line 21
+		    		21. Print the relative ASCII char associated (1,2,3,4,5,6,7,8,9)
+		    	22. Calculate the new decimal value minus num_unit*unit
+                // on final iteration decimal value will equal zero and the code will loop back to the start of the while loop
+    23. return 0

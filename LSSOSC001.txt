@@ -1,0 +1,259 @@
+a)
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main ()
+{
+    printf("*****************************\nDECIMAL TO RADIX-i converter\nWritten by: Oscar Liss\nDate: 2022\n*****************************\n");
+    return 0;
+}
+
+b)
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main ()
+{
+    #define TITLE "DECIMAL TO RADIX-i converter"
+    #define NAME "Oscar Liss"
+    #define YEAR "2022"
+
+    printf("*****************************\n%s\nWritten by: %s\nDate: %s\n*****************************\n", TITLE, NAME, YEAR);
+
+    return 0;
+}
+
+c)
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main ()
+{
+    #define TITLE "DECIMAL TO RADIX-i converter"
+    #define NAME "Oscar Liss"
+    #define YEAR "2022"
+    int dec = 0;
+
+    printf("*****************************\n%s\nWritten by: %s\nDate: %s\n*****************************\n", TITLE, NAME, YEAR);
+    printf("Enter a decimal number: ");
+    scanf("%d", &dec);
+    printf("The decimal number you have entered is %d\n", dec);
+
+    return 0;
+}
+
+d)
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main ()
+{
+    #define TITLE "DECIMAL TO RADIX-i converter"
+    #define NAME "Oscar Liss"
+    #define YEAR "2022"
+    int dec = 0, radix;
+
+    printf("*****************************\n%s\nWritten by: %s\nDate: %s\n*****************************\n", TITLE, NAME, YEAR);
+    printf("Enter a decimal number: ");
+    scanf("%d", &dec);
+    printf("The decimal number you have entered is %d\n", dec);
+    printf("Enter a radix for the converter between 2 and 16: ");
+    scanf("%d", &radix);
+    printf("The radix you have entered is %d\n", radix);
+
+    return 0;
+}
+
+e)
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main ()
+{
+    #define TITLE "DECIMAL TO RADIX-i converter"
+    #define NAME "Oscar Liss"
+    #define YEAR "2022"
+    int dec = 0, radix;
+
+    printf("*****************************\n%s\nWritten by: %s\nDate: %s\n*****************************\n", TITLE, NAME, YEAR);
+
+    while(dec>=0)
+    {
+        printf("Enter a decimal number: ");
+        scanf("%d", &dec);
+
+        if(dec<0)
+        {
+            printf("EXIT\n");
+        }
+        else
+        {
+            printf("The decimal number you have entered is %d\n", dec);
+            printf("Enter a radix for the converter between 2 and 16: ");
+            scanf("%d", &radix);
+            printf("The radix you have entered is %d\n", radix);
+        }
+    }
+
+    return 0;
+}
+
+f)
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main ()
+{
+    #define TITLE "DECIMAL TO RADIX-i converter"
+    #define NAME "Oscar Liss"
+    #define YEAR "2022"
+    int dec = 0, radix;
+
+    printf("*****************************\n%s\nWritten by: %s\nDate: %s\n*****************************\n", TITLE, NAME, YEAR);
+
+    while(dec>=0)
+    {
+        printf("Enter a decimal number: ");
+        scanf("%d", &dec);
+
+        if(dec<0)
+        {
+            printf("EXIT\n");
+        }
+        else
+        {
+            printf("The decimal number you have entered is %d\n", dec);
+            printf("Enter a radix for the converter between 2 and 16: ");
+            scanf("%d", &radix);
+            printf("The radix you have entered is %d\n", radix);
+            double log_2;
+            log_2 = log2(dec);
+            printf("The log2 of the number is %.2f\n", log_2);
+        }
+    }
+
+    return 0;
+}
+
+g)
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main ()
+{
+    #define TITLE "DECIMAL TO RADIX-i converter"
+    #define NAME "Oscar Liss"
+    #define YEAR "2022"
+    int dec = 0, radix;
+
+    printf("*****************************\n%s\nWritten by: %s\nDate: %s\n*****************************\n", TITLE, NAME, YEAR);
+
+    while(dec>=0)
+    {
+        printf("Enter a decimal number: ");
+        scanf("%d", &dec);
+
+        if(dec<0)
+        {
+            printf("EXIT\n");
+        }
+        else
+        {
+            printf("The decimal number you have entered is %d\n", dec);
+            printf("Enter a radix for the converter between 2 and 16: ");
+            scanf("%d", &radix);
+            printf("The radix you have entered is %d\n", radix);
+            double log_2;
+            log_2 = log2(dec);
+            printf("The log2 of the number is %.2f\n", log_2);
+            printf("The integer result of the number divided by %d is %d\n", radix, (dec/radix));
+
+        }
+    }
+
+    return 0;
+}
+
+h)
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main ()
+{
+    #define TITLE "DECIMAL TO RADIX-i converter"
+    #define NAME "Oscar Liss"
+    #define YEAR "2022"
+    int dec = 0, radix;
+
+    printf("*****************************\n%s\nWritten by: %s\nDate: %s\n*****************************\n", TITLE, NAME, YEAR);
+
+    while(dec>=0)
+    {
+        printf("Enter a decimal number: ");
+        scanf("%d", &dec);
+
+        if(dec<0)
+        {
+            printf("EXIT\n");
+        }
+        else
+        {
+            printf("The decimal number you have entered is %d\n", dec);
+            printf("Enter a radix for the converter between 2 and 16: ");
+            scanf("%d", &radix);
+            printf("The radix you have entered is %d\n", radix);
+            double log_2;
+            log_2 = log2(dec);
+            printf("The log2 of the number is %.2f\n", log_2);
+            printf("The integer result of the number divided by %d is %d\n", radix, (dec/radix));
+            printf("The remainder is %d\n", (dec%radix));
+        }
+    }
+
+    return 0;
+}
+
+
+Pseudo Code
+LSSOSC001
+
+1. Start main
+2. Initialize decimal and radix as integers
+3. Print intro title card
+4. While the decimal >= 0: do line 5 - 23
+	5. Scan in decimal and radix from the user
+	6. If decimal<0: do line 7
+		7. Print EXIT and then move to line 23
+	8. Else: do line 9 - 22
+        9. Calculate, initialize and print log base 2 of decimal number 
+        10. Calculate, initialize and print the integer result of decimal divided by radix
+        11. Calculate, initialize and print the remainder 
+        12. Call Dec2RadI: do line 13 - 22
+		    13. Calculate and initialize logVal. The log of the decimal with radix as the base
+		    14. Calculate and initialize logVal_floor. The floor of the logVal
+		    15. For i starting at 0 until i<= logVal_floor: do line 16 - 22 
+		    	16. Calculate and initialize unit. The radix to the power of (logVal_floor – i)
+		    	17. Calculate and initialize num_unit. The floor of the decimal divided by unit
+		    	18. If num_unit is greater than 9: do line 19
+		    		19. Print the relative ASCII char associated (A,B,C,D,E,F)
+		    	20. Else: do line 21
+		    		21. Print the relative ASCII char associated (1,2,3,4,5,6,7,8,9)
+		    	22. Calculate the new decimal value minus num_unit*unit
+                // on final iteration decimal value will equal zero and the code will loop back to the start of the while loop
+    23. return 0
